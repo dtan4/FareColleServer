@@ -1,0 +1,27 @@
+p#notice = notice
+
+p
+  strong Felica:
+  = @history.felica_id
+p
+  strong Device type:
+  = @history.device_type
+p
+  strong Process type:
+  = @history.process_type
+p
+  strong Posted at:
+  = @history.posted_at
+p
+  strong Balance:
+  = @history.balance
+p
+  strong Serial number:
+  = @history.serial_number
+p
+  strong Region:
+  = @history.region
+
+= link_to 'Edit', edit_history_path(@history)
+'|
+= link_to 'Back', histories_path
